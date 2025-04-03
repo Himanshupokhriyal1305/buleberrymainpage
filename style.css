@@ -1,0 +1,220 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.navbar-nav {
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+
+    .navbar .container-fluid {
+        direction: rtl;
+    }
+}
+@media (min-width: 768px) and (max-width: 1099px) {
+    .Blueberryheight {
+      height: 29rem !important;
+      }
+      .Blueberryparghap {
+        line-height: normal;
+      }
+  }
+
+.nav-item{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+
+}
+.videoheight {
+    height: 30rem;
+}
+.Blueberrytext{
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    line-height: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.Blueberryparghap{
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    line-height: normal;
+
+}
+.roundedtop {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.Personalized {
+    background-color: #B0DDF3;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+
+
+.image-handed {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+
+}
+
+.whychoose {
+    background-color: #B0DDF3;
+}
+
+.elementor-shape-fill {
+    fill: #B0DDF3;
+}
+
+
+.whychoosetextparaghap {
+    font-size: clamp(10px, 2.5vw, 12px);
+    font-weight: 600;
+}
+
+.whychoosebackend {
+    background-color: #EAF5F8;
+}
+
+.unmatched {
+    background-color: #46aadc;
+}
+.global{
+border: 2px dotted #A1A1A187;
+}
+.HandmadewithLove {
+    border: 2px dotted #A1A1A187 !important;
+
+}
+.textsizee{
+    font-size: clamp(10px, 2.5vw, 14px);
+
+}
+.Goodluck{
+    background-color: #B0DDF3;
+}
+.fa-circle{
+    font-size: 7px; 
+    padding-right: 5px;
+    color: #46aadc;
+}
+.footer{
+    background-image: url("./buleberryimage/footer-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+
+    .copyicon {
+        justify-content: end !important;
+    }
+}
+@media (max-width: 768px) {
+
+    .copyicon {
+        justify-content: center !important;
+    }
+    .maxblueberry{
+        height: 20rem;
+    }
+    .Blueberryparghap{
+        line-height: 15px !important;
+    }
+    .Blueberryheightsec{
+        height: 24rem;
+    }
+}
+@media (max-width: 400px) {
+.Blueberryheightsec{
+    height: 27rem;
+}}
+.testimonial-card {
+    background: #eef7ff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.testimonial-card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.quote-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #007bff;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom-left-radius: 40px;
+}
+.image-card {
+    text-align: center;
+}
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-card p {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+}
+.cardes {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.cardes:hover {
+    transform: translateY(-5px);
+}
+.know{
+    background-color: #46aadc !important;
+   
+    
+}
+.knowarrow{
+    fill: #46aadc;
+}
+@media (max-width: 576px) {
+    .GiftCategories{
+       padding: 1em !important;
+    }}
+    @media (min-width: 576px) {
+        .GiftCategories{
+      
+        
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}}
+.GoodLuck {
+    font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+    line-height: 1.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.Hindu{
+    font-size: clamp(1.0rem, 2.0vw, 1.5rem);
+    line-height: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.e-fas-angle-double-right {
+    fill: #007bff;
+}
