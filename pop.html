@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .know {
+            background-color: black !important;
+            color: white !important;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .know:hover {
+            background-color: #333 !important;
+            transform: scale(1.05);
+        }
+        @media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }}
+    @media (max-width: 992px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+    .modal-content {
+        width: 100vw;
+        height: auto;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid GiftCategories mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="cardes card border-0">
+                    <img src="./buleberryimage/portrait-gallery-29-1024x1024.webp" alt="Handmade Portraits">
+                    <div class="card-body text-center">
+                        <h5 class="card-title card-titles fw-bold">Handmade Portraits</h5>
+                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal1">Know
+                            More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="card cardes border-0">
+                    <img src="./buleberryimage/5-960x1024.webp" alt="Personalized Greeting Cards">
+                    <div class="card-body text-center">
+                        <h5 class="card-title card-titles fw-bold">Personalized Greeting Cards</h5>
+                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal2">Know
+                            More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="cardes card border-0">
+                    <img src="./buleberryimage/Book-gallery-3-1024x919.webp" alt="Customized Storybooks">
+                    <div class="card-body text-center">
+                        <h5 class="card-title card-titles fw-bold">Customized Storybooks & Memory Books</h5>
+                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal3">Know
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade  col-lg-12" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog  col-lg-12">
+            <div class="modal-content col-lg-12">
+                <section id="gift-section">
+                    <p id="gift-title">Turn your cherished memories into <b>hand-drawn pencil portraits</b> and <b>customized family portraits</b>. <br>Our skilled artists bring your photos to life with <b>photo-to-drawing</b> transformations.</p>
+                    
+                    <div id="gift-container">
+                        <div class="gift-card">
+                            <img src="./images/self-portrait.webp" class="gift-image" alt="Self-Portrait">
+                            <p class="gift-name">Self-Portrait</p>
+                            <p class="gift-description">A personal masterpiece of yourself</p>
+                        </div>
+            
+                        <div class="gift-card">
+                            <img src="./images/pet-portrait.webp" class="gift-image" alt="Pet Portrait">
+                            <p class="gift-name">Pet Portrait</p>
+                            <p class="gift-description">A heartfelt tribute to your furry friends</p>
+                        </div>
+            
+                        <div class="gift-card">
+                            <img src="./images/family-portrait.webp" class="gift-image" alt="Family Portrait">
+                            <p class="gift-name">Family Portrait</p>
+                            <p class="gift-description">Celebrate your loved ones in a single frame</p>
+                        </div>
+            
+                        <div class="gift-card">
+                            <img src="./images/parents-portrait.webp" class="gift-image" alt="Parents' Portrait">
+                            <p class="gift-name">Parents’ Portrait</p>
+                            <p class="gift-description">A touching gift to cherish their legacy</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="modal-body">
+                    <p>Handmade Portraits are a unique and special way to preserve memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Personalized Greeting Cards</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Personalized Greeting Cards allow you to express your emotions in a unique way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Customized Storybooks & Memory Books</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Customized Storybooks & Memory Books make the perfect gift for any occasion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

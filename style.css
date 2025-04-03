@@ -218,3 +218,185 @@ border: 2px dotted #A1A1A187;
 .e-fas-angle-double-right {
     fill: #007bff;
 }
+.e-fas-check{
+    fill: #007bff;
+
+}
+.everall {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#B0DDF3;
+    flex-direction: column;
+}
+
+.EveryOccasion {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Every {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 0px;
+}
+
+
+
+.btnn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active {
+    background-color: black;
+}
+.e-fas-angle-double-down path {
+    fill: #46aadc;
+}
+.know {
+    background-color: #46aadc !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.know:hover {
+    background-color: #333 !important;
+    transform: scale(1.05);
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 100% !important;
+        margin: 0;
+    }
+    @media (max-width: 992px) {
+        .modal-dialog {
+            max-width: 100% !important;
+            margin: 0;
+        }}
+    .modal-content {
+        width: 100vw;
+        height: auto;
+
+    }
+}
+.modal-content {
+ 
+    background-color: #f0f8ff !important;
+
+}
+#gift-section {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+}
+
+#gift-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+#gift-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gift-card {
+    
+    border-style: dashed;
+    border-width: 1px 1px 1px 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: #3B4757;
+  
+    border-radius: 8px 8px 8px 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 250px;
+}
+
+.gift-card:hover{
+    border-color: #000000 !important;
+
+}
+.gift-card:hover {
+    transform: translateY(-5px);
+}
+
+.gift-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.gift-images{
+    width: 40%;
+    border-radius: 10px;
+
+}
+
+.gift-name {
+  
+    font-family: 'Pacifico',"Brush Script MT", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #3B4757;
+
+}
+.card-titles{
+    font-family: 'Pacifico',"Brush Script MT", cursive;
+    font-size: 28px;
+    font-weight: 500;
+    color: #3B4757;
+}
+
+.gift-description {
+    font-size: 13px;
+    color: #555;
+}
