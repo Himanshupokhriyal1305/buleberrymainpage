@@ -2,152 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Categories</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .know {
-            background-color: black !important;
-            color: white !important;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive 3D Stack Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px;
+    }
 
-        .know:hover {
-            background-color: #333 !important;
-            transform: scale(1.05);
-        }
-        @media (min-width: 992px) {
-    .modal-dialog {
-        max-width: 100%;
-        margin: 0;
-    }}
-    @media (max-width: 992px) {
-    .modal-dialog {
-        max-width: 100%;
-        margin: 0;
+    .card-stack {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      perspective: 1000px;
     }
-    .modal-content {
-        width: 100vw;
-        height: auto;
+
+    .card-stack img {
+      position: absolute;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    
     }
-}
-    </style>
+
+    .controls {
+      margin-top: 20px;
+      text-align: start;
+    }
+
+    .controls button {
+      font-size: 2rem;
+      border: none;
+      background: transparent;
+      margin: 0 10px;
+      transition: 0.3s;
+      font-weight: bolder;
+    }
+
+    .controls button:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .card-stack {
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-stack {
+        max-width: 200px;
+      }
+
+      .controls button {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-    <div class="container-fluid GiftCategories mt-5">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="cardes card border-0">
-                    <img src="./buleberryimage/portrait-gallery-29-1024x1024.webp" alt="Handmade Portraits">
-                    <div class="card-body text-center">
-                        <h5 class="card-title card-titles fw-bold">Handmade Portraits</h5>
-                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal1">Know
-                            More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4">
-                <div class="card cardes border-0">
-                    <img src="./buleberryimage/5-960x1024.webp" alt="Personalized Greeting Cards">
-                    <div class="card-body text-center">
-                        <h5 class="card-title card-titles fw-bold">Personalized Greeting Cards</h5>
-                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal2">Know
-                            More</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4">
-                <div class="cardes card border-0">
-                    <img src="./buleberryimage/Book-gallery-3-1024x919.webp" alt="Customized Storybooks">
-                    <div class="card-body text-center">
-                        <h5 class="card-title card-titles fw-bold">Customized Storybooks & Memory Books</h5>
-                        <button class="btn know fw-bold" data-bs-toggle="modal" data-bs-target="#modal3">Know
-                            More</button>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row justify-content-space-between">
+      <!-- Stack 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card-stack" id="cardStack1">
+          <img src="./buleberryimage/portrait-gallery-37-650x650.webp" alt="1" />
+          <img src="./buleberryimage/portrait-gallery-36-650x650.webp" alt="2" />
+          <img src="./buleberryimage/portrait-gallery-32-650x650.webp" alt="3" />
+          <img src="./buleberryimage/portrait-gallery-20-650x650.webp" alt="4" />
+          <img src="./buleberryimage/portrait-gallery-09-650x650.webp" alt="5" />
         </div>
-    </div>
-
-    <!-- Modal 1 -->
-    <div class="modal fade  col-lg-12" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-        <div class="modal-dialog  col-lg-12">
-            <div class="modal-content col-lg-12">
-                <section id="gift-section">
-                    <p id="gift-title">Turn your cherished memories into <b>hand-drawn pencil portraits</b> and <b>customized family portraits</b>. <br>Our skilled artists bring your photos to life with <b>photo-to-drawing</b> transformations.</p>
-                    
-                    <div id="gift-container">
-                        <div class="gift-card">
-                            <img src="./images/self-portrait.webp" class="gift-image" alt="Self-Portrait">
-                            <p class="gift-name">Self-Portrait</p>
-                            <p class="gift-description">A personal masterpiece of yourself</p>
-                        </div>
-            
-                        <div class="gift-card">
-                            <img src="./images/pet-portrait.webp" class="gift-image" alt="Pet Portrait">
-                            <p class="gift-name">Pet Portrait</p>
-                            <p class="gift-description">A heartfelt tribute to your furry friends</p>
-                        </div>
-            
-                        <div class="gift-card">
-                            <img src="./images/family-portrait.webp" class="gift-image" alt="Family Portrait">
-                            <p class="gift-name">Family Portrait</p>
-                            <p class="gift-description">Celebrate your loved ones in a single frame</p>
-                        </div>
-            
-                        <div class="gift-card">
-                            <img src="./images/parents-portrait.webp" class="gift-image" alt="Parents' Portrait">
-                            <p class="gift-name">Parents’ Portrait</p>
-                            <p class="gift-description">A touching gift to cherish their legacy</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="modal-body">
-                    <p>Handmade Portraits are a unique and special way to preserve memories.</p>
-                </div>
-            </div>
+        <div class="controls ps-5 pt-3">
+          <button  onclick="prevCard('cardStack1')">&#171;</button>
+          <button onclick="nextCard('cardStack1')">&#187;</button>
         </div>
-    </div>
+      </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal2Label">Personalized Greeting Cards</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Personalized Greeting Cards allow you to express your emotions in a unique way.</p>
-                </div>
-            </div>
+      <!-- Stack 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card-stack" id="cardStack2">
+          <img src="./buleberryimage/greeting-card-gallery-15-768x890.webp" alt="1" />
+          <img src="./buleberryimage/greeting-card-gallery-04.webp" alt="2" />
+          <img src="./buleberryimage/greeting-card-gallery-02-768x737.webp" alt="3" />
+          <img src="./buleberryimage/greeting-card-gallery-08-1-876x1024.webp" alt="4" />
+          <img src="./buleberryimage/greeting-card-gallery-05.webp" alt="5" />
         </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal3Label">Customized Storybooks & Memory Books</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Customized Storybooks & Memory Books make the perfect gift for any occasion.</p>
-                </div>
-            </div>
+        <div class="controls ps-5 pt-3">
+          <button onclick="prevCard('cardStack2')">&#171;</button>
+          <button onclick="nextCard('cardStack2')">&#187;</button>
         </div>
-    </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Stack 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card-stack" id="cardStack3">
+          <img src="./buleberryimage/Book-gallery-10-768x721.webp" alt="1" />
+          <img src="./buleberryimage/Book-gallery-9-768x955.webp" alt="2" />
+          <img src="./buleberryimage/Book-gallery-3-768x689.webp" alt="3" />
+          <img src="./buleberryimage/Book-gallery-8.webp" alt="4" />
+          <img src="./buleberryimage/Book-gallery-1-1.webp" alt="5" />
+        </div>
+        <div class="controls ps-5 pt-3">
+          <button onclick="prevCard('cardStack3')">&#171;</button>
+          <button onclick="nextCard('cardStack3')">&#187;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateStack(stackId) {
+      const cardStack = document.getElementById(stackId);
+      const cards = cardStack.children;
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].style.zIndex = cards.length - i;
+        if (i === 0) {
+          cards[i].style.transform = 'translateX(0) translateY(10%) scale(1) rotateY(0deg)';
+          cards[i].style.opacity = '1';
+        } else if (i === 1) {
+          cards[i].style.transform = 'translateX(20px) translateY(5%) scale(0.96)';
+          cards[i].style.opacity = '0.95';
+        } else if (i === 2) {
+          cards[i].style.transform = 'translateX(40px) translateY(0%) scale(0.92)';
+          cards[i].style.opacity = '0.9';
+        } else if (i === 3) {
+          cards[i].style.transform = 'translateX(60px) translateY(-5%) scale(0.88)';
+          cards[i].style.opacity = '0.85';
+        } else if (i === 4) {
+          cards[i].style.transform = 'translateX(80px) translateY(-10%) scale(0.84)';
+          cards[i].style.opacity = '0.8';
+        } else {
+          cards[i].style.opacity = '0';
+        }
+      }
+    }
+
+    function nextCard(stackId) {
+      const cardStack = document.getElementById(stackId);
+      const first = cardStack.children[0];
+      const clone = first.cloneNode(true);
+      cardStack.appendChild(clone);
+      cardStack.removeChild(first);
+      updateStack(stackId);
+    }
+
+    function prevCard(stackId) {
+      const cardStack = document.getElementById(stackId);
+      const last = cardStack.children[cardStack.children.length - 1];
+      const clone = last.cloneNode(true);
+      cardStack.removeChild(last);
+      cardStack.prepend(clone);
+      updateStack(stackId);
+    }
+
+    // Initialize all stacks
+    updateStack('cardStack1');
+    updateStack('cardStack2');
+    updateStack('cardStack3');
+
+    // Auto rotation
+    setInterval(() => nextCard('cardStack1'), 3000);
+    setInterval(() => nextCard('cardStack2'), 4000);
+    setInterval(() => nextCard('cardStack3'), 5000);
+  </script>
 </body>
 
 </html>
+<svg class="position-relative " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8"
+preserveAspectRatio="none" style="transform: scaleY(-1); top: 1;">
+<path class="elementor-shape-fill "
+    d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z">
+</path>
+
+<path class="elementor-shape-fill"
+    d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z">
+</path>
+<path class="elementor-shape-fill"
+    d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z">
+</path>
+<path class="elementor-shape-fill"
+    d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z">
+</path>
+<path class="elementor-shape-fill"
+    d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z">
+</path>
+<path class="elementor-shape-fill"
+    d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z">
+</path>
+<path class="elementor-shape-fill"
+    d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z">
+</path>
+<path class="elementor-shape-fill"
+    d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z">
+</path>
+<path class="elementor-shape-fill"
+    d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z">
+</path>
+</svg>

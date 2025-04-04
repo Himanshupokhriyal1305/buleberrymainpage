@@ -204,10 +204,10 @@ border: 2px dotted #A1A1A187;
     padding-left: 3rem !important;
 }}
 .GoodLuck {
-    font-size: clamp(1.1rem, 3.5vw, 1.3rem);
-    line-height: 1.7rem;
-    font-weight: 700;
-    white-space: nowrap;
+    font-size: clamp(1.1rem, 3.5vw, 2rem);
+
+    font-weight: 800;
+   
 }
 .Hindu{
     font-size: clamp(1.0rem, 2.0vw, 1.5rem);
@@ -250,7 +250,7 @@ border: 2px dotted #A1A1A187;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: black;
+    background: #3BA0F0 !important;
     color: white;
     border: none;
     padding: 10px;
@@ -294,7 +294,7 @@ border: 2px dotted #A1A1A187;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition:  0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .know:hover {
@@ -316,7 +316,14 @@ border: 2px dotted #A1A1A187;
         height: auto;
 
     }
+   
 }
+
+@media (max-width: 576px) {
+.controls {
+    margin-top: 20px;
+    text-align: center !important;
+  }}
 .modal-content {
  
     background-color: #f0f8ff !important;
@@ -400,3 +407,60 @@ border: 2px dotted #A1A1A187;
     font-size: 13px;
     color: #555;
 }
+
+
+    .card-stack {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+
+    .card-stack img {
+      position: absolute;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    
+    }
+
+    .controls {
+      margin-top: 20px;
+      text-align: start;
+    }
+
+    .controls button {
+      font-size: 2rem;
+      border: none;
+      background: transparent;
+      margin: 0 10px;
+      transition: 0.3s;
+      font-weight: bolder;
+    }
+
+    .controls button:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .card-stack {
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-stack {
+        max-width: 200px;
+      }
+
+      .controls button {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+    }
+ 
