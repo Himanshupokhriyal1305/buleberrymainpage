@@ -301,6 +301,17 @@ border: 2px dotted #A1A1A187;
     background-color: #333 !important;
     transform: scale(1.05);
 }
+
+@media (max-width: 992px) {
+    .YourPerfect{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cloudes{
+        display: none !important;
+    }
+    }
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 100% !important;
@@ -311,13 +322,19 @@ border: 2px dotted #A1A1A187;
             max-width: 100% !important;
             margin: 0;
         }}
+       
+      
     .modal-content {
         width: 100vw;
         height: auto;
 
     }
+    .YourPerfect{
+        width: 100%;
+    }
    
 }
+
 
 @media (max-width: 576px) {
 .controls {
@@ -463,4 +480,33 @@ border: 2px dotted #A1A1A187;
         font-weight: bolder;
       }
     }
- 
+
+    .cloudes {
+      width: 20%;
+      overflow: hidden; /* Hide the overflow to make the animation smoother */
+    }
+
+    .boxcloudes {
+      position: relative;
+      width: 100%;
+      height: 80px; /* Adjust the height as needed */
+    }
+
+    .boxcloudes img {
+      position: absolute;
+      width: 250px; /* Adjust the size of the image */
+      animation: moveImage 30s linear infinite; /* Animation on the image */
+    }
+
+    /* Keyframes for moving the image */
+    @keyframes moveImage {
+      0% {
+        left: -100px; /* Start off-screen to the left */
+      }
+      50% {
+        left: 100%; /* Move the image to the far right */
+      }
+      100% {
+        left: -100px; /* Move it back to the left off-screen */
+      }
+    }
