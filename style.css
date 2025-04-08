@@ -337,7 +337,7 @@ border: 2px dotted #A1A1A187;
 
 
 @media (max-width: 576px) {
-.controls {
+.controlsbtntow {
     margin-top: 20px;
     text-align: center !important;
   }}
@@ -445,12 +445,12 @@ border: 2px dotted #A1A1A187;
     
     }
 
-    .controls {
+    .controlsbtntow {
       margin-top: 20px;
       text-align: start;
     }
 
-    .controls button {
+    .controlsbtntow button {
       font-size: 2rem;
       border: none;
       background: transparent;
@@ -459,7 +459,7 @@ border: 2px dotted #A1A1A187;
       font-weight: bolder;
     }
 
-    .controls button:hover {
+    .controlsbtntow button:hover {
       color: #0d6efd;
       transform: scale(1.2);
     }
@@ -475,7 +475,7 @@ border: 2px dotted #A1A1A187;
         max-width: 200px;
       }
 
-      .controls button {
+      .controlsbtntow button {
         font-size: 2rem;
         font-weight: bolder;
       }
@@ -510,3 +510,12 @@ border: 2px dotted #A1A1A187;
         left: -100px; /* Move it back to the left off-screen */
       }
     }
+
+
+.radious{
+    border-radius: 9px;
+}
+@media (max-width: 602px) { 
+    .Perfect  {
+  text-align: center;
+    }}
